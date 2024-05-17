@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather info</title>
+        <link rel="stylesheet" href="./css/style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="./js/jquery.js"></script>
+        <!-- ===================================
+        # Weather App
+        # Developed by Midhun George
+        ==================================== -->
+    </head>
+
+    <body>
+        <div class="location" >
+            <div class="search-wrapper">
+                <div class="search-input">
+                    <label for="LOC">Enter the location</label>
+                    <input type="text" id="LOC">
+                    <button class="search"><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+            <div class="action-buttons">
+                <button class="weather-button" onclick="getWeatherData('w')">Weather</button>
+                <button class="forcast-button" onclick="getWeatherData('f')">Forcaste</button>
+            </div>
+        </div>
+        <div class="weather-info">
+            <p class="weather-in">Weather in <span class = "loc-name"></span></span></p> 
+        </div>
+        <div class="weather-wrapper"  style="display: none;">
+           
+            <div class = "temp">
+                
+                <div class ="temperatures">
+                    <div class ="temp-grid">
+                        <span><i class="fa fa-thermometer-half text-warning my-2"></i>Temp : <span class="cur-temp">18</span></span>
+                    </div>
+                    <div class ="temp-grid">
+                        <span><i class="fa fa-thermometer-half text-warning my-2"></i>Feels Like : <span class="feels-temp">18</span></span>
+                    </div>
+                    <div class ="temp-grid">
+                        <span><i class="fa fa-thermometer-half text-warning my-2"></i>Min : <span class="temp-min">18</span></span>
+                    </div>
+                    <div class ="temp-grid">
+                        <span><i class="fa fa-thermometer-full text-warning my-2"></i>Max : <span class="temp-max">18</span></span>
+                    </div>
+                    
+                    <div class ="temp-grid">
+                        <span><img src="" class="main-icon"><span class="main-text"></span></span>
+                    </div>
+                    <div class ="temp-grid">
+                        <span><i class="fa fa-code"></i> Wind : <span class="pre-wind"></span></span>
+                    </div>
+
+                    <div class ="temp-grid">
+                        <span><i class="fa fa-percent text-warning my-2"></i>Humidity : <span class="hum-temp">18</span></span>
+                    </div>
+                    <div class ="temp-grid">
+                        <span><i class="fa fa-compress"></i>Pressure : <span class="pre-temp">18</span></span>
+                    </div>
+
+                    <div class ="temp-grid">
+                        <span><i class="fa fa-solid fa-cloud"></i> Clouds : <span class="pre-cloud"></span></span>
+                    </div>
+                    <div class ="temp-grid" style="visibility: hidden;">
+                        <span><i class="fa fa-solid fa-cloud"></i> Clouds : <span class="pre-cloud"></span></span>
+                    </div>
+
+
+                    <div class ="temp-grid">
+                        <span><i class="fa fa-solid fa-sun"></i>Sun Rise : <span class="sunrise"></span></span>
+                    </div>
+                    <div class ="temp-grid">
+                        <span><i class="fa fa-regular fa-moon"></i> Sun Set : <span class="sunset"></span></span>
+                    </div>
+
+                    
+                </div>
+                <div class="cancel-btn">
+                    <button class="cancel" onclick="goBack('back')">Check Another</button>
+                </div>
+            </div>
+        </div>
+        <div class="forcaste">
+                
+        </div>
+        <div class="cancel-btn-forcaste" style="display: none;">
+            <button class="cancel" onclick="goBack('back')">Check Another</button>
+        </div>
+        <script src="./js/weather.js"></script>
+    </body>
+</html>

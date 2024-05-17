@@ -1,0 +1,146 @@
+body{
+    background-image: url("https://source.unsplash.com/random/?London");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.location {
+    margin: auto;
+    width: 35%;
+    background: #343a40;
+    position: relative;
+    top: 30%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+.search-input label {
+    font-size: 40px;
+    color: #FFF;
+}
+.search-input input {
+    height:40px;
+    width:280px;
+    
+    outline: none;
+}
+button.search {
+    height: 40px;
+    background: transparent;
+    border: none;
+    margin-left: -30px;
+}
+
+button.search {
+    height: 40px;
+    background: transparent;
+    border: none;
+    margin-left: -30px;
+}
+button.search .fa {color: blue;}
+
+button.weather-button {background: #273927;color: #FFF;border: none;}
+
+.action-buttons button {
+    width: 100px;
+    height: 36px;
+    cursor: pointer;
+}
+
+.action-buttons {
+    margin-top: 10px;
+}
+.weather-wrapper {
+    background: #433232;
+    width: 50%;
+    margin: auto;
+    position: relative;
+    
+}
+.cancel-btn {
+    text-align: end;
+}
+button.cancel {
+    background: #3d2717;
+    height: 32px;
+    border: none;
+    color: #dba5a5;
+    position: relative;
+    width: 100px;
+    cursor: pointer;
+}
+.temperatures {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.temp-grid {
+    width: calc(50% - 20px);
+    gap: 10px;
+    display: flex;
+    height: 60px;
+    padding: 10px;
+    box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+}
+
+.temp-grid i {
+    color: #fff;
+    margin-right: 5px;
+    font-size: 20px;
+}
+img.main-icon {
+    width: 30px;
+}
+span.main-text {
+    position: relative;
+    bottom: 8px;
+}
+i.fa.fa-regular.fa-moon::before {
+    content: "\f186";
+}
+i.fa.fa-solid.fa-sun::before {
+    content: "\f185";
+}
+
+.weather-info {
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+}
+.temp-grid span {
+    color: #e7c407;
+}
+.daywise:not(last-child) {
+    border-bottom: 2px solid #e6dede;
+}
+.date-info {
+    height: 30px;
+    color: #FFF;
+    text-align: center;
+}
+
+/* --------------forcaste-------------- */
+.daywise {
+    width: calc(50% - 30px) !important;
+}
+
+.forcaste {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background: #763636;
+}
+.cancel-btn-forcaste {
+    display: flex;
+    width: 100%;
+    place-content: end;
+}
+.forcaste {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background: #763636;
+    max-height: calc(100vh - 100px);
+    overflow: auto;
+}
