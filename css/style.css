@@ -106,7 +106,7 @@ i.fa.fa-solid.fa-sun::before {
 .weather-info {
     font-size: 24px;
     text-align: center;
-    color: #fff;
+    
 }
 .temp-grid span {
     color: #e7c407;
@@ -143,4 +143,21 @@ i.fa.fa-solid.fa-sun::before {
     background: #763636;
     max-height: calc(100vh - 100px);
     overflow: auto;
+}
+
+@media(max-width:480px){
+    .weather-wrapper {
+        background: #433232;
+        width: 100%;
+        margin: auto;
+        position: relative;
+        
+    }
+    .location {
+        width: 95% !important;
+        padding: 10px;
+    }
+    body{
+        background: #979494;
+    }
 }
